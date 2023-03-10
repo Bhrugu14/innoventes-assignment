@@ -3,25 +3,28 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+      <div className="input">
+        <label htmlFor="username">Github username: </label>
+        <input id="username" type="text" className='border'/>
+        <label htmlFor="fork">Include forks: </label>
+        <input id="fork" type="checkbox" />
+        <button>Submit</button>
+      </div>
+      <section>
+        <header>
+          <div className="col">Name</div>
+          <div className="col">Language</div>
+          <div className="col">Description</div>
+          <div className="col">Size</div>
+        </header>
+        <div>
+          <div className="col">C1</div>
+          <div className="col">C2</div>
+          <div className="col">C3</div>
+          <div className="col">C4</div>
+        </div>
+      </section>
+      <div className="error">Dummy error</div>
     </div>
   );
 }
